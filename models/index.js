@@ -1,17 +1,14 @@
 const mongoose = require('mongoose')
 const PlantSchema = require('./Plant')
 const CategorySchema = require('./Category')
-const TaskSchema = require('./Task')
-// const ReviewSchema = require('./Review')
+const CareSchema = require('./Care')
 
 const Plant = mongoose.model('Plant', PlantSchema)
 const Category = mongoose.model('Category', CategorySchema)
-const Task = mongoose.model('Task', TaskSchema)
-// const Review = mongoose.model('reviews', ReviewSchema)
+const Care = mongoose.model('Care', CareSchema)
 
 module.exports = {
   Plant,
   Category,
-  Task
-  // Review
+  Care
 }
