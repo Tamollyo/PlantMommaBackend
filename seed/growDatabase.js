@@ -5,26 +5,29 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
   // CATEGORIES
-  const cateogryIndoor = new Category({
-    type: 'Indoor Plants',
+  const categoryIndoor = new Category({
+    name: 'Indoor Plants',
     description: 'Indoor Plants require a lot of love',
+    weather: 'Sun',
     image: 'https://i.imgur.com/ePIkwsB.png'
   })
-  await cateogryIndoor.save()
+  await categoryIndoor.save()
 
-  const cateogryOutdoor = new Category({
+  const categoryOutdoor = new Category({
     name: 'Outdoor Plants require a lot of love',
-    description: '',
+    description: 'Outdoor Plants require a lot of love',
+    weather: 'Sun',
     image: 'https://i.imgur.com/ePIkwsB.png'
   })
-  await cateogryOutdoor.save()
+  await categoryOutdoor.save()
 
-  const cateogryHerb = new Category({
-    type: 'Herbs',
+  const categoryHerb = new Category({
+    name: 'Herbs',
     description: 'Herbs require a lot of love',
+    weather: 'Sun',
     image: 'https://i.imgur.com/ePIkwsB.png'
   })
-  await cateogryHerb.save()
+  await categoryHerb.save()
 
   // PLANTS
   const plantSpider = new Plant({
@@ -35,7 +38,7 @@ const main = async () => {
     maintenance: 'Low',
     image:
       'https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781476733951_9781476733951_hr.jpg',
-    category: cateogryIndoor._id
+    category: categoryIndoor._id
   })
   await plantSpider.save()
 
@@ -47,7 +50,7 @@ const main = async () => {
     maintenance: 'Low',
     image:
       'https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781476733951_9781476733951_hr.jpg',
-    category: cateogryIndoor._id
+    category: categoryIndoor._id
   })
   await plantMonster.save()
 
@@ -59,7 +62,7 @@ const main = async () => {
     maintenance: 'Low',
     image:
       'https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781476733951_9781476733951_hr.jpg',
-    category: cateogryOutdoor._id
+    category: categoryOutdoor._id
   })
   await plantDaisy.save()
 
@@ -71,7 +74,7 @@ const main = async () => {
     maintenance: 'Low',
     image:
       'https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781476733951_9781476733951_hr.jpg',
-    category: cateogryHerb._id
+    category: categoryHerb._id
   })
   await plantThyme.save()
 
