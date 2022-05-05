@@ -24,7 +24,7 @@ router.get('/task', controllers.getTask)
 
 router.get('/task/:tid', controllers.getTaskById)
 
-router.delete('/tasl/:tid', controllers.deleteTask)
+router.delete('/task/:tid', controllers.deleteTask)
 
 router.post('/task', controllers.createTask)
 

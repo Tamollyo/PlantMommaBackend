@@ -6,7 +6,7 @@ const Task = new Schema(
     tag: { type: String, required: true },
     description: { type: String, required: true },
     schedule: { type: String, required: true },
-    category: { type: Schema.Types.ObjectId, ref: 'Plant', required: true }
+    plant: { type: Schema.Types.ObjectId, ref: 'Plant', required: true }
   },
   { timestamps: true }
 )

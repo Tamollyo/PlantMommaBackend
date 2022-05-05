@@ -84,31 +84,31 @@ const main = async () => {
       tag: 'Water',
       description: 'Soak plant throughly',
       schedule: 'Every other day',
-      category: plantMonster._id
+      plant: plantMonster._id
     },
     {
       tag: 'Water',
       description: 'Soak plant throughly',
       schedule: 'Every other day',
-      category: plantSpider._id
+      plant: plantSpider._id
     },
     {
       tag: 'Soak',
       description: 'Soak plant throughly',
       schedule: 'Every other day',
-      category: plantDaisy._id
+      plant: plantDaisy._id
     },
     {
       tag: 'Water',
       description: 'Soak plant throughly',
       schedule: 'Every other day',
-      category: plantThyme._id
+      plant: plantThyme._id
     },
     {
       tag: 'Pick',
       description: 'Pull off leaves and cut extranious stems',
       schedule: 'monthly',
-      category: plantThyme._id
+      plant: plantThyme._id
     }
   ]
   await Task.insertMany(tasks)
