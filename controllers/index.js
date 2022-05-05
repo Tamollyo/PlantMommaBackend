@@ -123,7 +123,7 @@ const deleteTask = async (req, res) => {
   }
 }
 
-const getTaskByPlantId = async (req, res) => {
+const getTasksByPlantId = async (req, res) => {
   try {
     let tasks = await Task.find({ plant: req.params.pid }).exec()
     return res.status(201).json(tasks)
@@ -145,5 +145,5 @@ module.exports = {
   getTaskById,
   deleteTask,
   createTask,
-  getTaskByPlantId
+  getTasksByPlantId
 }
