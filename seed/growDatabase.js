@@ -9,15 +9,15 @@ const main = async () => {
     name: 'Indoor Plants',
     description: 'Indoor Plants require a lot of love',
     weather: 'Sun',
-    image: 'https://i.imgur.com/ePIkwsB.png'
+    image: 'https://i.imgur.com/8NAlRuv.png'
   })
   await categoryIndoor.save()
 
   const categoryOutdoor = new Category({
-    name: 'Outdoor Plants require a lot of love',
+    name: 'Outdoor Plants',
     description: 'Outdoor Plants require a lot of love',
     weather: 'Sun',
-    image: 'https://i.imgur.com/ePIkwsB.png'
+    image: 'https://i.imgur.com/dxX9EHf.png'
   })
   await categoryOutdoor.save()
 
@@ -25,7 +25,7 @@ const main = async () => {
     name: 'Herbs',
     description: 'Herbs require a lot of love',
     weather: 'Sun',
-    image: 'https://i.imgur.com/ePIkwsB.png'
+    image: 'https://i.imgur.com/NXZHenN.png'
   })
   await categoryHerb.save()
 
@@ -38,6 +38,7 @@ const main = async () => {
     maintenance: 'Low',
     image:
       'https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781476733951_9781476733951_hr.jpg',
+    alive: 'dead',
     category: categoryIndoor._id
   })
   await plantSpider.save()
@@ -50,6 +51,7 @@ const main = async () => {
     maintenance: 'Low',
     image:
       'https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781476733951_9781476733951_hr.jpg',
+    alive: 'dead',
     category: categoryIndoor._id
   })
   await plantMonster.save()
@@ -62,6 +64,7 @@ const main = async () => {
     maintenance: 'Low',
     image:
       'https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781476733951_9781476733951_hr.jpg',
+    alive: 'dead',
     category: categoryOutdoor._id
   })
   await plantDaisy.save()
@@ -74,6 +77,7 @@ const main = async () => {
     maintenance: 'Low',
     image:
       'https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781476733951_9781476733951_hr.jpg',
+    alive: 'dead',
     category: categoryHerb._id
   })
   await plantThyme.save()

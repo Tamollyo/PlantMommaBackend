@@ -10,6 +10,7 @@ const Plant = new Schema(
     schedule: { type: String, required: true },
     maintenance: { type: String, required: true },
     image: { type: String, required: true },
+    alive: { type: String, required: true },
     category: { type: Schema.Types.ObjectId, ref: 'Category', required: true }
   },
   { timestamps: true }
