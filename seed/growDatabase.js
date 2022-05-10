@@ -29,7 +29,7 @@ const main = async () => {
   })
   await categoryHerb.save()
 
-  // PLANTS
+  // INDOOR PLANTS
   const plantSpider = new Plant({
     name: 'Spider Plant',
     description: 'Tough plant',
@@ -43,19 +43,47 @@ const main = async () => {
   })
   await plantSpider.save()
 
-  const plantMonster = new Plant({
-    name: 'Monstera',
-    description: 'Tough plant',
-    sun: 'Can survive in low and high light',
+  const plantSnake = new Plant({
+    name: 'Snake Plant',
+    description: 'Effortless to grow and reaches up to 2 to 4 feet',
+    sun: 'Low Light',
+    schedule: 'Repot once roots show through bottom',
+    maintenance: 'Low',
+    image:
+      'https://www.domino.com/uploads/2020/01/28/snake-Plant-Benefits-domino.jpg',
+    alive: 'Dead',
+    category: categoryIndoor._id
+  })
+  await plantSnake.save()
+
+  const plantMoney = new Plant({
+    name: 'Money Tree',
+    description:
+      'Pet Friendly, Air purifying plant. Can grow to 60ft tall in the wild.',
+    sun: 'Low to Bright Indirect',
     schedule: 'Repot once roots show through bottom',
     maintenance: 'Low',
     image:
       'https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781476733951_9781476733951_hr.jpg',
-    alive: 'dead',
+    alive: 'Dead',
+    category: categoryIndoor._id
+  })
+  await plantMoney.save()
+
+  const plantMonster = new Plant({
+    name: 'Monstera',
+    description: 'Beautiful plant with wonderful dramatic hole formations',
+    sun: 'Low to bright indirect light',
+    schedule: 'Repot once roots show through bottom',
+    maintenance: 'Low',
+    image:
+      'https://www.flowerdaise.com.au/wp-content/uploads/2021/02/0175-scaled.jpg',
+    alive: 'Dead',
     category: categoryIndoor._id
   })
   await plantMonster.save()
 
+  // OUTDOOR
   const plantDaisy = new Plant({
     name: 'Daisy',
     description: 'Tough plant',
@@ -69,6 +97,7 @@ const main = async () => {
   })
   await plantDaisy.save()
 
+  // HERBS
   const plantThyme = new Plant({
     name: 'Thyme',
     description: 'Tough plant',
