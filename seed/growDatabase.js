@@ -91,7 +91,7 @@ const main = async () => {
     schedule: 'Repot once roots show through bottom',
     maintenance: 'Low',
     image:
-      'https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781476733951_9781476733951_hr.jpg',
+      'https://flower-meanings.com/wp-content/uploads/2019/08/White-daisies.jpg',
     alive: 'Alive',
     category: categoryOutdoor._id
   })
