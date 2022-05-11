@@ -37,7 +37,7 @@ const main = async () => {
     schedule: 'Repot once roots show through bottom',
     maintenance: 'Low',
     image:
-      'https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781476733951_9781476733951_hr.jpg',
+      'https://asset.bloomnation.com/c_pad,d_vendor:global:catalog:product:image.png,f_auto,fl_preserve_transparency,q_auto/v1605539373/vendor/5422/catalog/product/2/0/20200716061734_file_5f1099be7ad7d_5f109d07acb9d.jpg',
     alive: 'dead',
     category: categoryIndoor._id
   })
@@ -64,7 +64,7 @@ const main = async () => {
     schedule: 'Repot once roots show through bottom',
     maintenance: 'Low',
     image:
-      'https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781476733951_9781476733951_hr.jpg',
+      'https://www.plants.com/images/157651-Money-Tree-Plant-M_20201203-1607028492125.jpg',
     alive: 'Dead',
     category: categoryIndoor._id
   })
@@ -92,7 +92,7 @@ const main = async () => {
     maintenance: 'Low',
     image:
       'https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781476733951_9781476733951_hr.jpg',
-    alive: 'dead',
+    alive: 'Alive',
     category: categoryOutdoor._id
   })
   await plantDaisy.save()
@@ -105,8 +105,8 @@ const main = async () => {
     schedule: 'Repot once roots show through bottom',
     maintenance: 'Low',
     image:
-      'https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781476733951_9781476733951_hr.jpg',
-    alive: 'dead',
+      'https://www.edenbrothers.com/store/media/Seeds-Herbs/SHTHY111-1.jpg',
+    alive: 'Alive',
     category: categoryHerb._id
   })
   await plantThyme.save()
