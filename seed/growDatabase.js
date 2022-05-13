@@ -100,16 +100,101 @@ const main = async () => {
   // HERBS
   const plantThyme = new Plant({
     name: 'Thyme',
-    description: 'Tough plant',
-    sun: 'Can survive in low and high light',
-    schedule: 'Repot once roots show through bottom',
+    description:
+      'Thyme is a wonderful herb with a pleasant, pungent, clover flavor. It smells like summer to us!',
+    sun: 'Full sun, part sun',
+    schedule: 'Biweekly water, or when dry',
     maintenance: 'Low',
     image:
-      'https://www.edenbrothers.com/store/media/Seeds-Herbs/SHTHY111-1.jpg',
+      'https://www.almanac.com/sites/default/files/styles/max_2600x2600/public/image_nodes/thyme-planting-growing.jpg?itok=mq2xykYZ',
     alive: 'Alive',
     category: categoryHerb._id
   })
   await plantThyme.save()
+
+  const plantRosemary = new Plant({
+    name: 'Rosemary',
+    description:
+      'Rosemary is a perennial evergreen shrub with blue flowers. It is an aromatic and distinctive herb with a sweet, resinous flavor.',
+    sun: 'Full sun',
+    schedule: 'Water when dry, biweekly',
+    maintenance: 'Low',
+    image:
+      'https://www.almanac.com/sites/default/files/styles/max_2600x2600/public/image_nodes/rosemary-foliage.jpg?itok=KbLHnHoT',
+    alive: 'Alive',
+    category: categoryHerb._id
+  })
+  await plantRosemary.save()
+
+  const plantBasil = new Plant({
+    name: 'Basil',
+    description:
+      'Basil is a warm-weather, fragrant herb that tastes great in many dishes—including the beloved homemade pesto!',
+    sun: 'Full sun',
+    schedule: 'Water weekly',
+    maintenance: 'Low',
+    image:
+      'https://www.almanac.com/sites/default/files/styles/max_2600x2600/public/image_nodes/basil-leaves-herb.jpg?itok=EXbFsZgZ',
+    alive: 'Alive',
+    category: categoryHerb._id
+  })
+  await plantBasil.save()
+
+  const plantOregano = new Plant({
+    name: 'Oregano',
+    description:
+      'Oregano is a perennial herb with rose-purple or white flowers and a taste reminiscent of thyme.',
+    sun: 'Full sun',
+    schedule: 'Water when wilted',
+    maintenance: 'Low',
+    image:
+      'https://www.almanac.com/sites/default/files/styles/max_2600x2600/public/image_nodes/oregano.jpg?itok=ZKKSzRjI',
+    alive: 'Alive',
+    category: categoryHerb._id
+  })
+  await plantOregano.save()
+
+  const plantLavender = new Plant({
+    name: 'Lavender',
+    description:
+      'Lavender is a bushy, strong-scented perennial plant from the Mediterranean.',
+    sun: 'Full sun',
+    schedule: 'Water bi-weekly, grows fast',
+    maintenance: 'Low',
+    image:
+      'https://www.almanac.com/sites/default/files/styles/max_2600x2600/public/image_nodes/lavender-field-1595587_1920.jpg?itok=ybMMpEDa',
+    alive: 'Alive',
+    category: categoryHerb._id
+  })
+  await plantLavender.save()
+
+  const plantParsley = new Plant({
+    name: 'Parsley',
+    description:
+      'Parsley is a biennial plant with bright green, feather-like leaves that is in the same family as dill.',
+    sun: 'High to medium light',
+    schedule: 'Biennial, water weekly',
+    maintenance: 'Low',
+    image:
+      'https://www.almanac.com/sites/default/files/styles/max_2600x2600/public/image_nodes/parsley-planting-growing-harvesting.jpg?itok=DVs2qmfy',
+    alive: 'Alive',
+    category: categoryHerb._id
+  })
+  await plantParsley.save()
+
+  const plantSage = new Plant({
+    name: 'Sage',
+    description:
+      'Perennial, evergreen subshrub, with woody stems, grayish leaves, and blue to purplish flowers.',
+    sun: 'Full sun',
+    schedule: 'Bloom Time, Summer. Water weekly',
+    maintenance: 'Low',
+    image:
+      'https://www.almanac.com/sites/default/files/styles/max_2600x2600/public/image_nodes/sage-planting-growing-harvesting.jpg?itok=K1NEp8wp',
+    alive: 'Alive',
+    category: categoryHerb._id
+  })
+  await plantSage.save()
 
   // Task
   const tasks = [
