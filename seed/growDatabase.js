@@ -289,10 +289,28 @@ const main = async () => {
       plant: plantDaisy._id
     },
     {
-      tag: 'Water',
+      tag: 'Soak',
       description: 'Soak plant throughly',
-      schedule: 'Every other day',
+      schedule: 'Weekly',
+      plant: plantDah._id
+    },
+    {
+      tag: 'Water',
+      description: 'Mist plant',
+      schedule: 'weekly',
       plant: plantThyme._id
+    },
+    {
+      tag: 'Water',
+      description: 'Mist plant',
+      schedule: 'weekly',
+      plant: plantOregano._id
+    },
+    {
+      tag: 'Water',
+      description: 'Mist plant',
+      schedule: 'weekly',
+      plant: plantBasil._id
     },
     {
       tag: 'Pick',
