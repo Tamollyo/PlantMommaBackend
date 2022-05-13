@@ -155,6 +155,20 @@ const main = async () => {
   })
   await plantSun.save()
 
+  const plantDah = new Plant({
+    name: 'Dahlia',
+    description:
+      'Dahlias inspire awe and a good cheer. Growing vegetables? Put a row of dahlias on the border, where they will not shade your edibles. They make for lovely cut flowers.',
+    sun: 'Full sun',
+    schedule: 'Water weekly',
+    maintenance: 'Medium',
+    image:
+      'https://www.almanac.com/sites/default/files/styles/max_2600x2600/public/image_nodes/dahlia-3598551_1920.jpg?itok=htdAcnXh',
+    alive: 'Alive',
+    category: categoryOutdoor._id
+  })
+  await plantDah.save()
+
   // HERBS
   const plantThyme = new Plant({
     name: 'Thyme',
