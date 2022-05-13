@@ -98,17 +98,34 @@ const main = async () => {
   await plantDaisy.save()
 
   const plantHosta = new Plant({
-    name: 'Daisy',
-    description: 'Tough plant',
-    sun: 'Can survive in low and high light',
-    schedule: 'Repot once roots show through bottom',
+    name: 'Hosta',
+    description:
+      'Reliable and easy to grow, hostas are long-lived—and may even outlive the gardener!',
+    sun: 'Shade',
+    schedule:
+      'Water weekly, once large enough you can split the plant and propagate more!',
     maintenance: 'Low',
     image:
-      'https://flower-meanings.com/wp-content/uploads/2019/08/White-daisies.jpg',
+      'https://www.almanac.com/sites/default/files/styles/max_2600x2600/public/image_nodes/hosta-plant.jpg?itok=pVQZuJwV',
     alive: 'Alive',
     category: categoryOutdoor._id
   })
   await plantHosta.save()
+
+  const plantHops = new Plant({
+    name: 'Hops',
+    description:
+      'Reliable and easy to grow, hostas are long-lived—and may even outlive the gardener!',
+    sun: 'Shade',
+    schedule:
+      'Water weekly, once large enough you can split the plant and propagate more!',
+    maintenance: 'Low',
+    image:
+      'https://www.almanac.com/sites/default/files/styles/max_2600x2600/public/image_nodes/hops-closest.jpg?itok=3DsKxYWu',
+    alive: 'Alive',
+    category: categoryOutdoor._id
+  })
+  await plantHops.save()
 
   // HERBS
   const plantThyme = new Plant({
