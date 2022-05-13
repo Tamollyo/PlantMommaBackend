@@ -116,16 +116,44 @@ const main = async () => {
     name: 'Hops',
     description:
       'Reliable and easy to grow, hostas are long-lived—and may even outlive the gardener!',
-    sun: 'Shade',
-    schedule:
-      'Water weekly, once large enough you can split the plant and propagate more!',
-    maintenance: 'Low',
+    sun: 'Part, and full sun',
+    schedule: 'Plant in spring, after the last frost',
+    maintenance: 'Medium',
     image:
       'https://www.almanac.com/sites/default/files/styles/max_2600x2600/public/image_nodes/hops-closest.jpg?itok=3DsKxYWu',
     alive: 'Alive',
     category: categoryOutdoor._id
   })
   await plantHops.save()
+
+  const plantWis = new Plant({
+    name: 'Wisteria',
+    description:
+      'Wisteria blooms vigorously in spring, producing clusters of lilac-color flowers on new growth, which in turn emerges from spurs off the main shoots.',
+    sun: 'Full sun',
+    schedule: 'Water weekly',
+    maintenance: 'Medium',
+    image:
+      'https://www.almanac.com/sites/default/files/styles/max_2600x2600/public/image_nodes/wisteria.jpg?itok=4EmEdLiZ',
+    alive: 'Alive',
+    category: categoryOutdoor._id
+  })
+  await plantWis.save()
+
+  // https://www.almanac.com/plant/sunflowers
+  const plantSun = new Plant({
+    name: 'Sun Flower',
+    description:
+      'Everyone loves growing sunflowers. With bright blooms that go all summer, very few plants are as heat-tolerant, resistant to pests, and attractive to pollinators and birds.',
+    sun: 'Full sun',
+    schedule: 'Water weekly',
+    maintenance: 'Medium',
+    image:
+      'https://www.almanac.com/sites/default/files/styles/max_2600x2600/public/image_nodes/sunflower-1627193_1920.jpg?itok=3ncNl6ha',
+    alive: 'Alive',
+    category: categoryOutdoor._id
+  })
+  await plantSun.save()
 
   // HERBS
   const plantThyme = new Plant({
