@@ -32,7 +32,7 @@ const main = async () => {
   // INDOOR PLANTS
   const plantSpider = new Plant({
     name: 'Spider Plant',
-    description: 'Tough plant',
+    description: 'Tough plant with long leaves. Propagates easily',
     sun: 'Can survive in low and high light',
     schedule: 'Repot once roots show through bottom',
     maintenance: 'Low',
@@ -96,6 +96,19 @@ const main = async () => {
     category: categoryOutdoor._id
   })
   await plantDaisy.save()
+
+  const plantHosta = new Plant({
+    name: 'Daisy',
+    description: 'Tough plant',
+    sun: 'Can survive in low and high light',
+    schedule: 'Repot once roots show through bottom',
+    maintenance: 'Low',
+    image:
+      'https://flower-meanings.com/wp-content/uploads/2019/08/White-daisies.jpg',
+    alive: 'Alive',
+    category: categoryOutdoor._id
+  })
+  await plantHosta.save()
 
   // HERBS
   const plantThyme = new Plant({
