@@ -283,6 +283,13 @@ const main = async () => {
       plant: plantSpider._id
     },
     {
+      tag: 'Propagate',
+      description: 'Cut off plant nodes and replant',
+      schedule:
+        'Once nodes have established themselves off of the larger plant',
+      plant: plantSpider._id
+    },
+    {
       tag: 'Water',
       description: 'water plant',
       schedule: 'weekly, or when drooping',
@@ -310,6 +317,13 @@ const main = async () => {
       tag: 'Water',
       description: 'Mist plant',
       schedule: 'weekly',
+      plant: plantOregano._id
+    },
+    {
+      tag: 'Cuttings',
+      description:
+        'Take cuttings from the oregano plant and let dry or keep in wet papertowel.',
+      schedule: 'weekly or when plant appears overgrown',
       plant: plantOregano._id
     },
     {
