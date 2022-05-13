@@ -283,10 +283,16 @@ const main = async () => {
       plant: plantSpider._id
     },
     {
-      tag: 'Soak',
-      description: 'Soak plant throughly',
-      schedule: 'Every other day',
+      tag: 'Water',
+      description: 'water plant',
+      schedule: 'weekly, or when drooping',
       plant: plantDaisy._id
+    },
+    {
+      tag: 'Mist',
+      description: 'Mist plant when drooping',
+      schedule: 'weekly, or when drooping',
+      plant: plantSage._id
     },
     {
       tag: 'Soak',
@@ -317,6 +323,18 @@ const main = async () => {
       description: 'Pull off leaves and cut extranious stems',
       schedule: 'monthly',
       plant: plantThyme._id
+    },
+    {
+      tag: 'Pick',
+      description: 'Pull off leaves and cut extranious stems',
+      schedule: 'monthly',
+      plant: plantBasil._id
+    },
+    {
+      tag: 'Pick',
+      description: 'Pull off leaves and cut extranious stems',
+      schedule: 'monthly',
+      plant: plantDah._id
     }
   ]
   await Task.insertMany(tasks)
